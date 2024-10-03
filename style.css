@@ -1,0 +1,119 @@
+
+
+.nav {
+    background-color: #bb2b4f;
+    display: flex;
+   justify-content: space-between;
+    height: 6vw;
+   align-items: center;
+    width: 100%;
+    
+}
+.nav-part1 {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 4vw;
+    background-color: rgb(203, 95, 56);
+   border-radius: 0%;
+    gap: 0vw;
+    position: relative;
+}
+.H4 {
+    color:rgb(234, 228, 228);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.nav-part1 H4{
+    padding: 10px 20px ;
+    border: 2px solid #0d0b0b;
+    border-radius: 50px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    font-size: 14px; 
+    transition: all ease 0.4s; 
+    overflow: hidden;
+}
+.nav-part1 H4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    min-inline-size: normal;
+}
+.nav-part1 H4:hover::after{
+    bottom: 0;
+    border-radius: 0%;
+}
+.nav-part1 H4 a {
+    text-decoration: none;
+    color: rgb(234, 228, 228);
+    z-index: 9;
+    position: relative;
+}
+.nav-part1 H4:hover a{
+    color:rgb(234, 228, 228);
+}
+
+
+.nav-part2 {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 4vw;
+    background-color: rgba(0, 0, 0, 0.889);
+     z-index: 5000;
+     position: sticky;
+    gap: 3vw;
+}
+
+.nav-part2 h4 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+    padding: 0px 20px; 
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+.nav-part2:hover {
+    height: 40vh;
+    transition: all ease 1s;
+}
+
+.nav-part2::after {
+    height: 0vh;
+    display: block;
+}
+
+.nav-part2 h5 span {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-top: 10px; 
+    padding-left: -20px;
+}
+
+
+.social-media {
+    margin-top: 40px;
+    padding: 20px;
+   position: fixed;
+    margin-left: 1450px;
+    gap: 1vw;
+}
+
+.social-media a img:hover {
+    transform:scale(1.3) ;
+    cursor: pointer;
+}
+
+.page2 {
+    height: 100vh;
+}
